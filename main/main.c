@@ -577,7 +577,7 @@ void app_main(void)
 {
     vTaskDelay(pdMS_TO_TICKS(100));
     xQueue = xQueueCreate(100, 64);
-    rtc_wdt_disable();
+    //rtc_wdt_disable();
     init_nvs();
     init_mqtt();
     init_wifi();
